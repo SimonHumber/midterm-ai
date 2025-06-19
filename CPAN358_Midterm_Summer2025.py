@@ -78,6 +78,7 @@ def show_images(images, title_texts):
 
 
 if __name__ == "__main__":
+    print("Training...")
 
     # %%
     #
@@ -87,7 +88,7 @@ if __name__ == "__main__":
     #
     # Set file paths based on added MNIST Datasets
     #
-    input_path = "/Users/simontran/Humber/Semester5/AI/Midterm/mnist-dataset"
+    input_path = "mnist-dataset"
     training_images_filepath = join(
         input_path, "train-images-idx3-ubyte/train-images-idx3-ubyte"
     )
@@ -105,7 +106,6 @@ if __name__ == "__main__":
     # Helper function to show a list of images with their relating titles
     #
 
-    print("Training...")
     # Load MINST dataset
     mnist_dataloader = MnistDataloader(
         training_images_filepath,
